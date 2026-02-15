@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.RockaRhymeLLC/bmobot-mcp",
+  "description": "37 developer tools as MCP server — hash, encode, regex, JSON, SQL, cron, QR codes, UUID, JWT, semver, email validation, color palettes, CIDR calculator, and more. Free, no API key required.",
+  "repository": {
+    "url": "https://github.com/RockaRhymeLLC/bmobot-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "bmobot-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "Custom API base URL (default: https://{service}.bmobot.ai). The {service} placeholder is replaced per tool.",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": false,
+          "name": "BMOBOT_API_BASE"
+        }
+      ]
+    }
+  ]
+}
